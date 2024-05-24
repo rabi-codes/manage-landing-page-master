@@ -329,12 +329,12 @@
         z-index: 3;
         position: relative;
       }
-      .simplifyBg {
+      /* .simplifyBg {
         display: block;
         z-index: 0;
         position: absolute;
         top: 263%;
-      }
+      } */
       h2 {
         width: 40%;
         font-size: 35px;
