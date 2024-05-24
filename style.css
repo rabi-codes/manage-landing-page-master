@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --brightRed: hsl(12, 88%, 59%);
+  --darkBlue: #242d52;
+  --veryDarkBlue: hsl(233, 12%, 13%);
+  --darkGrayishBlue: hsl(227, 12%, 61%);
+  --veryPaleRed: hsl(13, 100%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+.main {
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  /* width: 90%;
+  margin: 0 auto; */
+  button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: var(--brightRed);
+    color: var(--veryLightGray);
+    border: none;
+    box-shadow: 2px 7px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  .menu {
+    display: none;
+  }
+  .logo {
+    /* filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5); */
+  }
+  .btn {
+    display: none;
+  }
+}
+.head {
+  .stats {
+    width: 100%;
+  }
+}
+.bringEveryone {
+  text-align: center;
+  margin-bottom: 50px;
+  h2 {
+    font-size: 37px;
+    color: var(--darkBlue);
+  }
+  p {
+    font-size: 17px;
+    line-height: 28px;
+    padding: 10px 30px;
+    color: var(--darkGrayishBlue);
+  }
+}
+.pageMiddle {
+  .whatsDifferent {
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px 30px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--darkBlue);
+  }
+  p {
+    font-size: 15px;
+    color: var(--darkGrayishBlue);
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+  .features {
+    ul {
+      list-style-type: none;
+    }
+    h3 {
+      font-size: 16px;
+      background-color: var(--veryPaleRed);
+      padding: 9px 20px;
+      margin: 0;
+      color: var(--darkBlue);
+    }
+    span {
+      background-color: var(--brightRed);
+      padding: 8px 22px;
+      margin-right: 10px;
+      border-radius: 50px;
+      color: var(--veryLightGray);
+    }
+    p {
+      font-size: 15px;
+      padding: 10px 10px 0px 15px;
+      color: var(--darkGrayishBlue);
+    }
+  }
+  .testimonials {
+    h2 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 30px;
+    }
+    .comment {
+      .li,
+      .bravo,
+      .watts,
+      .gough {
+        margin: 90px 20px 10px;
+        background-color: var(--veryLightGray);
+        text-align: center;
+        padding: 20px 0px;
+      }
+      h3 {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      p {
+        padding: 0px 20px;
+        margin-top: 20px;
+        font-size: 15px;
+      }
+      img {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+        margin-top: -15%;
+      }
+    }
+    .btn {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+.pageBottom {
+  .getStarted {
+    background-color: var(--brightRed);
+    padding: 80px 30px;
+    text-align: center;
+    margin-top: 10rem;
+    .simplifyBg {
+      display: none;
+    }
+    h2 {
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 50px;
+      color: var(--veryLightGray);
+      margin-bottom: 10px;
+    }
+    button {
+      color: var(--brightRed);
+      background-color: var(--veryLightGray);
+      font-weight: 700;
+    }
+  }
+  .footer {
+    background-color: var(--veryDarkBlue);
+    .mail {
+      padding: 20px;
+      input {
+        padding: 15px 60px;
+        border-radius: 50px;
+        border: none;
+      }
+      ::placeholder {
+        text-align: left;
+      }
+
+      button {
+        padding: 15px 30px;
+        margin-left: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .footerNav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 7rem;
+    margin: 30px 10px;
+    ul {
+      color: var(--veryLightGray);
+      list-style-type: none;
+      line-height: 35px;
+      font-size: 15px;
+    }
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    img {
+      width: 8%;
+    }
+  }
+  .footerLogo {
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 30px 10px;
+      width: 50%;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .pageHead {
+    .navbar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 25px 8rem;
+    }
+    .menu {
+      display: block;
+    }
+    .btn {
+      display: block;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -3%;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      color: var(--darkBlue);
+      gap: 20px;
+      font-size: 13px;
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+  .head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8%;
+    padding: 0 8rem;
+  }
+  .stats {
+    grid-column: 2 / 3;
+  }
+  .bringEveryone {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+    margin-right: 13rem;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    p {
+      padding: 10px 0px;
+    }
+  }
+  .pageMiddle {
+    .manageFeatures {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      padding: 4rem 6rem;
+      gap: 10rem;
+    }
+    .whatsDifferent {
+      text-align: left;
+      margin-top: 0;
+      h2 {
+        font-size: 33px;
+        margin-bottom: 20px;
+      }
+      p {
+        padding-right: 9rem;
+      }
+    }
+    .features {
+      h3 {
+        background-color: white;
+      }
+      p {
+        padding: 0 30px 0 100px;
+      }
+    }
+    .testimonials {
+      .comment {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        gap: 30px;
+        img {
+          width: 15%;
+        }
+
+        .gough {
+          display: none;
+        }
+        .li,
+        .bravo,
+        .watts {
+          padding-top: 30px;
+          background-color: var(--veryLightGray);
+        }
+      }
+    }
+  }
+  .pageBottom {
+    .getStarted {
+      padding: 55px 180px;
+      .simplify {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 3;
+        position: relative;
+      }
+      .simplifyBg {
+        display: block;
+        z-index: 0;
+        position: absolute;
+        top: 263%;
+      }
+      h2 {
+        width: 40%;
+        font-size: 35px;
+        text-align: left;
+      }
+    }
+    .footer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+      padding: 40px 0;
+      .manageInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+      }
+    }
+    .footerNav {
+      gap: 15rem;
+    }
+    .socials {
+      width: 130%;
+      margin-top: 30px;
+    }
+    .footerLogo {
+      margin-top: 5px;
+      width: 200%;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(103%) contrast(103%);
+    }
+  }
+}
